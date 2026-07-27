@@ -13,11 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body, #root { width: 100%; min-width: 0; min-height: 100%; margin: 0; }
-body { overflow: hidden; }
-button, input, select { font: inherit; }
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+}
+button,
+input,
+select {
+  font: inherit;
+}
 
 .server-detail {
   position: absolute;
@@ -31,20 +46,537 @@ button, input, select { font: inherit; }
   border: 1px solid #555;
   background: #050505ef;
   color: #f5f5f4;
-  font: 11px "IBM Plex Mono", monospace;
+  font:
+    11px "IBM Plex Mono",
+    monospace;
 }
 
-.server-detail b { color: #62d9ff; }
-.fleet button:disabled { cursor: not-allowed; opacity: .3; }
-.data-metrics .balanced { color: #62d9ff; }
+.server-detail b {
+  color: #62d9ff;
+}
+.fleet button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.data-metrics .balanced {
+  color: #62d9ff;
+}
 
 /* El 503 ocupa el portal completo y reproduce el documento de error del navegador. */
-.student-shell .response-panel.error{position:fixed;z-index:100;top:58px;right:14px;bottom:52px;left:14px;transform:none;width:auto;margin:0;padding:0;border:0;background:#fff;color:#000;box-shadow:none;font-family:Georgia,"Times New Roman",serif;display:block}.student-shell .response-panel.error:before{content:"▣   Service Unavailable                                      ×";display:block;height:42px;padding:12px 16px 0;background:#e6e6e6;border-bottom:1px solid #aaa;font:12px Arial,sans-serif;color:#111}.student-shell .response-panel.error:after{content:"‹    ›    ⟳       ⚠  Not secure     modalado-rg.vercel.app/seleccion\A\AService Unavailable\A────────────────────────────────────────────────────────\A\AHTTP Error 503. The service is unavailable.";white-space:pre-wrap;display:block;padding:10px 7px;font:18px Georgia,"Times New Roman",serif;line-height:1.35}.student-shell .response-panel.error>svg,.student-shell .response-panel.error div{display:none}.student-shell .response-panel.error button{position:absolute;right:12px;top:50px;padding:5px!important;color:#0645ad!important;font:12px Arial,sans-serif!important;text-decoration:underline}.table-toolbar label,.table-toolbar label input{background:#fff!important}
+.student-shell .response-panel.error {
+  position: fixed;
+  z-index: 100;
+  top: 58px;
+  right: 14px;
+  bottom: 52px;
+  left: 14px;
+  transform: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  color: #000;
+  box-shadow: none;
+  font-family: Georgia, "Times New Roman", serif;
+  display: block;
+}
+.student-shell .response-panel.error:before {
+  content: "▣   Service Unavailable                                      ×";
+  display: block;
+  height: 42px;
+  padding: 12px 16px 0;
+  background: #e6e6e6;
+  border-bottom: 1px solid #aaa;
+  font:
+    12px Arial,
+    sans-serif;
+  color: #111;
+}
+.student-shell .response-panel.error:after {
+  content: "‹    ›    ⟳       ⚠  Not secure     modalado-rg.vercel.app/seleccion\A\AService Unavailable\A────────────────────────────────────────────────────────\A\AHTTP Error 503. The service is unavailable.";
+  white-space: pre-wrap;
+  display: block;
+  padding: 10px 7px;
+  font:
+    18px Georgia,
+    "Times New Roman",
+    serif;
+  line-height: 1.35;
+}
+.student-shell .response-panel.error > svg,
+.student-shell .response-panel.error div {
+  display: none;
+}
+.student-shell .response-panel.error button {
+  position: absolute;
+  right: 12px;
+  top: 50px;
+  padding: 5px !important;
+  color: #0645ad !important;
+  font:
+    12px Arial,
+    sans-serif !important;
+  text-decoration: underline;
+}
+.table-toolbar label,
+.table-toolbar label input {
+  background: #fff !important;
+}
 
 /* Portal IBE: replica estructural del proceso de selección institucional. */
-.slow-system .service-pill.ready{color:#a66700;border-color:#d79b2f;background:#fff6df;font-size:0}.slow-system .service-pill.ready svg{color:#d58b00}.slow-system .service-pill.ready:after{content:"Sistema lento";font-size:12px}
-/* El modo presentación no tiene una experiencia independiente; no se expone en la interfaz. */
-header>button:last-child{display:none}
-@media(max-width:520px){.datacenter .data-metrics{max-width:78px}.datacenter .data-metrics>span{display:none}.datacenter .time-controls{top:52px;width:130px}.datacenter .time-controls label{font-size:8px}.datacenter .time-controls div{flex-wrap:wrap}.datacenter .flow-note{display:none}}
-@media(max-width:520px){.app{grid-template-rows:48px minmax(0,1fr) 46px}.content{padding:7px}.app header{padding:0 5px;gap:4px;min-width:0}.brand{font-size:9px;line-height:1.05;max-width:56px;gap:2px}.brand svg{width:11px;flex:none}nav{gap:2px;min-width:0}header nav button{font-size:0;padding:7px 6px;gap:0}header nav button svg{width:14px;height:14px}header>button:last-child{display:none}.math{gap:0}.graph-head{height:48px;align-items:flex-start;padding-top:3px}.graph-head p{font-size:7px}.graph h1{font-size:12px;white-space:nowrap;margin-top:2px}.line-tools{position:absolute;right:0;top:2px;gap:2px}.line-tools button{font-size:8px;padding:3px 4px}.line-tools button:nth-child(n+3){font-size:0;width:20px;height:20px;padding:0}.line-tools button:nth-child(3):after{content:"1×";font-size:7px}.line-tools button:nth-child(4):after{content:"4×";font-size:7px}.line-tools button:nth-child(5):after{content:"12×";font-size:7px}.axis-note{display:none}.playback{justify-content:flex-start;padding:4px;overflow-x:auto;scrollbar-width:none}.playback button,.playback select{font-size:9px;white-space:nowrap;padding:6px 7px}.playback button svg{width:11px;height:11px}.datacenter{border:0}.data-metrics{top:7px;left:7px;padding:6px;font-size:9px}.data-metrics strong{font-size:13px}.time-controls{top:7px;right:7px;width:150px;padding:6px}.time-controls div{gap:2px}.time-controls button{font-size:8px;padding:3px}.fleet{left:7px;bottom:31px}.server-detail,.request-status{display:none}}
-.client-view{background:#f1f5f8}.student-shell{padding:0;background:#f2f6f8;overflow:auto}.ua-topbar{height:54px;display:flex;align-items:center;gap:22px;padding:0 30px;background:#fff;border-bottom:1px solid #eef1f3;color:#123a76}.ua-topbar>b{font-size:21px;letter-spacing:-1.4px}.ua-topbar>b i{font-style:normal;color:#2086d4}.ua-topbar>b span{color:#2687d3;font-size:17px;padding-left:2px}.ua-topbar>strong{font-size:13px;color:#0c1846;border-left:1px solid #e4e4e4;padding-left:22px}.ua-topbar>small{font-size:10px;color:#677283}.student-profile{position:relative;margin:20px;border-radius:4px;padding:22px 20px 54px;background:#fff;display:flex;gap:15px;align-items:flex-start;color:#10224b;box-shadow:0 1px 4px #1723310b}.avatar{width:106px;height:106px;flex:none;display:grid;place-items:center;background:linear-gradient(145deg,#d1d5da,#9ba5ac);color:#f7f7f7;font:700 30px "IBM Plex Mono",monospace;position:relative}.avatar i{position:absolute;right:-3px;bottom:7px;width:11px;height:11px;border:2px solid #fff;border-radius:50%;background:#42c785}.profile-info{min-width:0;padding-top:2px;display:grid;gap:6px}.profile-info>b{font-size:13px}.profile-info>small{font-size:10px}.profile-metrics{display:flex;gap:12px;margin-top:10px;flex-wrap:wrap}.profile-metrics span{border:1px dashed #c6d5e4;padding:8px 10px;min-height:48px;display:grid;align-content:center}.profile-metrics span:nth-child(2){max-width:470px}.profile-metrics b{font-size:12px;white-space:nowrap}.profile-metrics small{margin-top:3px;color:#1585d0;font-size:9px}.student-profile .service-pill{margin-left:auto}.student-tabs{position:absolute;left:20px;right:20px;bottom:0;height:39px;display:flex;align-items:center;gap:28px;font-size:10px;color:#533b27}.student-tabs b{height:39px;display:flex;align-items:center;color:#078be3;border-bottom:2px solid #078be3}.offer-shell{margin:20px;padding:20px;background:#fff;border-radius:4px;box-shadow:0 1px 4px #1723310b}.table-toolbar{display:flex;justify-content:space-between;margin-bottom:12px}.table-toolbar label{height:30px;width:200px;display:flex;align-items:center;gap:7px;padding:0 9px;border:1px solid #d7dde5;color:#9aa4b0}.table-toolbar label svg{width:14px}.table-toolbar input{border:0;background:transparent;color:#17233e;outline:0;width:100%;font-size:11px}.table-toolbar div{display:flex;align-items:center;gap:10px;font-size:11px}.table-toolbar button{background:#078be3!important;border-color:#078be3!important;color:#fff!important;border-radius:3px!important;padding:6px 9px!important;font-size:10px}.subject-table{min-width:950px;border:1px solid #e8ecf0}.table-heading,.table-row{display:grid;grid-template-columns:34px 38px 58px 42px minmax(210px,1.9fr) 55px 115px 70px minmax(180px,1.4fr);align-items:center;column-gap:8px}.table-heading{height:52px;padding:0 12px;border-bottom:1px solid #e8ecf0;color:#1d365e;font-size:9px}.table-heading span:nth-child(5){text-align:center}.table-row{width:100%;min-height:57px;padding:8px 12px;background:#fff!important;color:#33405b!important;border:0!important;border-bottom:1px solid #edf0f3!important;border-radius:0!important;text-align:left;font-size:9px}.table-row:hover,.table-row.picked{background:#edf8fd!important}.table-row strong{font-size:9px;font-weight:600}.selection-check{width:13px;height:13px;border:1px solid #bcc7d1;border-radius:3px;display:grid;place-items:center;color:#fff;font-size:9px}.table-row.picked .selection-check{background:#078be3;border-color:#078be3}.table-row .full{color:#d45541}.client-lab small{margin-top:12px;color:#62d9ff;font:11px "IBM Plex Mono",monospace}@media(max-width:1050px){.student-profile .service-pill{display:none}.profile-metrics span:nth-child(2){max-width:300px}.offer-shell{overflow:auto}}@media(max-width:700px){.ua-topbar{padding:0 14px}.ua-topbar>small,.student-tabs span{display:none}.student-profile{margin:10px;padding:16px 12px 50px}.avatar{width:60px;height:60px;font-size:18px}.profile-metrics{gap:5px}.profile-metrics span:nth-child(2){display:none}.offer-shell{margin:10px;padding:10px}}
+.slow-system .service-pill.ready {
+  color: #a66700;
+  border-color: #d79b2f;
+  background: #fff6df;
+  font-size: 0;
+}
+.slow-system .service-pill.ready svg {
+  color: #d58b00;
+}
+.slow-system .service-pill.ready:after {
+  content: "Sistema lento";
+  font-size: 12px;
+}
+@media (max-width: 520px) {
+  .datacenter .data-metrics {
+    max-width: 78px;
+  }
+  .datacenter .data-metrics > span {
+    display: none;
+  }
+  .datacenter .time-controls {
+    top: 52px;
+    width: 130px;
+  }
+  .datacenter .time-controls label {
+    font-size: 8px;
+  }
+  .datacenter .time-controls div {
+    flex-wrap: wrap;
+  }
+  .datacenter .flow-note {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .app {
+    grid-template-rows: 48px minmax(0, 1fr) 46px;
+  }
+  .content {
+    padding: 7px;
+  }
+  .app header {
+    padding: 0 5px;
+    gap: 4px;
+    min-width: 0;
+  }
+  .brand {
+    font-size: 9px;
+    line-height: 1.05;
+    max-width: 56px;
+    gap: 2px;
+  }
+  .brand svg {
+    width: 11px;
+    flex: none;
+  }
+  nav {
+    gap: 2px;
+    min-width: 0;
+  }
+  header nav button {
+    font-size: 0;
+    padding: 7px 6px;
+    gap: 0;
+  }
+  header nav button svg {
+    width: 14px;
+    height: 14px;
+  }
+  .math {
+    gap: 0;
+  }
+  .graph-head {
+    height: 48px;
+    align-items: flex-start;
+    padding-top: 3px;
+  }
+  .graph-head p {
+    font-size: 7px;
+  }
+  .graph h1 {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+  .line-tools {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    gap: 2px;
+  }
+  .line-tools button {
+    font-size: 8px;
+    padding: 3px 4px;
+  }
+  .line-tools button:nth-child(n + 3) {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+  }
+  .line-tools button:nth-child(3):after {
+    content: "1×";
+    font-size: 7px;
+  }
+  .line-tools button:nth-child(4):after {
+    content: "4×";
+    font-size: 7px;
+  }
+  .line-tools button:nth-child(5):after {
+    content: "12×";
+    font-size: 7px;
+  }
+  .axis-note {
+    display: none;
+  }
+  .playback {
+    justify-content: flex-start;
+    padding: 4px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .playback button,
+  .playback select {
+    font-size: 9px;
+    white-space: nowrap;
+    padding: 6px 7px;
+  }
+  .playback button svg {
+    width: 11px;
+    height: 11px;
+  }
+  .datacenter {
+    border: 0;
+  }
+  .data-metrics {
+    top: 7px;
+    left: 7px;
+    padding: 6px;
+    font-size: 9px;
+  }
+  .data-metrics strong {
+    font-size: 13px;
+  }
+  .time-controls {
+    top: 7px;
+    right: 7px;
+    width: 150px;
+    padding: 6px;
+  }
+  .time-controls div {
+    gap: 2px;
+  }
+  .time-controls button {
+    font-size: 8px;
+    padding: 3px;
+  }
+  .fleet {
+    left: 7px;
+    bottom: 31px;
+  }
+  .server-detail,
+  .request-status {
+    display: none;
+  }
+}
+.client-view {
+  background: #f1f5f8;
+}
+.student-shell {
+  padding: 0;
+  background: #f2f6f8;
+  overflow: auto;
+}
+.ua-topbar {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 0 30px;
+  background: #fff;
+  border-bottom: 1px solid #eef1f3;
+  color: #123a76;
+}
+.ua-topbar > b {
+  font-size: 21px;
+  letter-spacing: -1.4px;
+}
+.ua-topbar > b i {
+  font-style: normal;
+  color: #2086d4;
+}
+.ua-topbar > b span {
+  color: #2687d3;
+  font-size: 17px;
+  padding-left: 2px;
+}
+.ua-topbar > strong {
+  font-size: 13px;
+  color: #0c1846;
+  border-left: 1px solid #e4e4e4;
+  padding-left: 22px;
+}
+.ua-topbar > small {
+  font-size: 10px;
+  color: #677283;
+}
+.student-profile {
+  position: relative;
+  margin: 20px;
+  border-radius: 4px;
+  padding: 22px 20px 54px;
+  background: #fff;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  color: #10224b;
+  box-shadow: 0 1px 4px #1723310b;
+}
+.avatar {
+  width: 106px;
+  height: 106px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #d1d5da, #9ba5ac);
+  color: #f7f7f7;
+  font:
+    700 30px "IBM Plex Mono",
+    monospace;
+  position: relative;
+}
+.avatar i {
+  position: absolute;
+  right: -3px;
+  bottom: 7px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #42c785;
+}
+.profile-info {
+  min-width: 0;
+  padding-top: 2px;
+  display: grid;
+  gap: 6px;
+}
+.profile-info > b {
+  font-size: 13px;
+}
+.profile-info > small {
+  font-size: 10px;
+}
+.profile-metrics {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.profile-metrics span {
+  border: 1px dashed #c6d5e4;
+  padding: 8px 10px;
+  min-height: 48px;
+  display: grid;
+  align-content: center;
+}
+.profile-metrics span:nth-child(2) {
+  max-width: 470px;
+}
+.profile-metrics b {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.profile-metrics small {
+  margin-top: 3px;
+  color: #1585d0;
+  font-size: 9px;
+}
+.student-profile .service-pill {
+  margin-left: auto;
+}
+.student-tabs {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 10px;
+  color: #533b27;
+}
+.student-tabs b {
+  height: 39px;
+  display: flex;
+  align-items: center;
+  color: #078be3;
+  border-bottom: 2px solid #078be3;
+}
+.offer-shell {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #1723310b;
+}
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.table-toolbar label {
+  height: 30px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 9px;
+  border: 1px solid #d7dde5;
+  color: #9aa4b0;
+}
+.table-toolbar label svg {
+  width: 14px;
+}
+.table-toolbar input {
+  border: 0;
+  background: transparent;
+  color: #17233e;
+  outline: 0;
+  width: 100%;
+  font-size: 11px;
+}
+.table-toolbar div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+.table-toolbar button {
+  background: #078be3 !important;
+  border-color: #078be3 !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  padding: 6px 9px !important;
+  font-size: 10px;
+}
+.subject-table {
+  min-width: 950px;
+  border: 1px solid #e8ecf0;
+}
+.table-heading,
+.table-row {
+  display: grid;
+  grid-template-columns: 34px 38px 58px 42px minmax(
+      210px,
+      1.9fr
+    ) 55px 115px 70px minmax(180px, 1.4fr);
+  align-items: center;
+  column-gap: 8px;
+}
+.table-heading {
+  height: 52px;
+  padding: 0 12px;
+  border-bottom: 1px solid #e8ecf0;
+  color: #1d365e;
+  font-size: 9px;
+}
+.table-heading span:nth-child(5) {
+  text-align: center;
+}
+.table-row {
+  width: 100%;
+  min-height: 57px;
+  padding: 8px 12px;
+  background: #fff !important;
+  color: #33405b !important;
+  border: 0 !important;
+  border-bottom: 1px solid #edf0f3 !important;
+  border-radius: 0 !important;
+  text-align: left;
+  font-size: 9px;
+}
+.table-row:hover,
+.table-row.picked {
+  background: #edf8fd !important;
+}
+.table-row strong {
+  font-size: 9px;
+  font-weight: 600;
+}
+.selection-check {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #bcc7d1;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 9px;
+}
+.table-row.picked .selection-check {
+  background: #078be3;
+  border-color: #078be3;
+}
+.table-row .full {
+  color: #d45541;
+}
+.client-lab small {
+  margin-top: 12px;
+  color: #62d9ff;
+  font:
+    11px "IBM Plex Mono",
+    monospace;
+}
+@media (max-width: 1050px) {
+  .student-profile .service-pill {
+    display: none;
+  }
+  .profile-metrics span:nth-child(2) {
+    max-width: 300px;
+  }
+  .offer-shell {
+    overflow: auto;
+  }
+}
+@media (max-width: 700px) {
+  .ua-topbar {
+    padding: 0 14px;
+  }
+  .ua-topbar > small,
+  .student-tabs span {
+    display: none;
+  }
+  .student-profile {
+    margin: 10px;
+    padding: 16px 12px 50px;
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .profile-metrics {
+    gap: 5px;
+  }
+  .profile-metrics span:nth-child(2) {
+    display: none;
+  }
+  .offer-shell {
+    margin: 10px;
+    padding: 10px;
+  }
+}
