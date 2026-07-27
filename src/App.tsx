@@ -44,7 +44,7 @@ const labels: Record<string, string> = {
 };
 function Clock() {
   const s = useSimulationStore();
-  const { result, status, load } = useStatus();
+  const { result, status } = useStatus();
   const last = useRef<number | undefined>(undefined);
   useEffect(() => {
     document.documentElement.classList.toggle("slow-system", status !== "safe");
@@ -146,7 +146,7 @@ function Controls() {
 }
 function MathView() {
   const s = useSimulationStore();
-  const { result, status } = useStatus();
+  const { result, status, load } = useStatus();
   const [exact, setExact] = useState(true);
   const [rk4, setRk4] = useState(true);
   const [zoom, setZoom] = useState(1);
