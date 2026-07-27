@@ -29,6 +29,7 @@ import {
   Search,
 } from "lucide-react";
 import { scenarios } from "@/data/scenarios";
+import { EquationGuide } from "@/components/math/EquationGuide";
 import { formatHours, formatNumber } from "@/lib/format";
 import { useSimulationStore, useStatus } from "@/store";
 import "./App.css";
@@ -43,7 +44,7 @@ const labels: Record<string, string> = {
 };
 function Clock() {
   const s = useSimulationStore();
-  const { result, status } = useStatus();
+  const { result, status, load } = useStatus();
   const last = useRef<number | undefined>(undefined);
   useEffect(() => {
     document.documentElement.classList.toggle("slow-system", status !== "safe");
@@ -303,6 +304,12 @@ function MathView() {
             </dd>
           </div>
         </dl>
+        <EquationGuide
+          currentLoad={load}
+          growthRate={s.parameters.growthRate}
+          capacity={s.parameters.carryingCapacity}
+          stepSize={s.parameters.stepSize}
+        />
       </aside>
     </div>
   );

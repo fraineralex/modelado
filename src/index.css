@@ -13,6 +13,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.equation-guide {
+  margin-top: 18px;
+  border-top: 1px solid #292929;
+  padding-top: 12px;
+}
+.equation-guide > p {
+  margin: 0 0 7px;
+  font:
+    700 9px "IBM Plex Mono",
+    monospace;
+  letter-spacing: 0.1em;
+  color: #aaa;
+}
+.equation-guide dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.equation-guide dl div {
+  border: 0 !important;
+  padding: 0 !important;
+}
+.equation-guide dt {
+  color: #62d9ff !important;
+  font-family: "IBM Plex Mono", monospace;
+}
+.equation-guide dd {
+  font-size: 10px !important;
+  line-height: 1.3;
+}
+.equation-guide small {
+  display: block;
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -480,10 +518,9 @@ select {
 .table-heading,
 .table-row {
   display: grid;
-  grid-template-columns: 34px 38px 58px 42px minmax(
-      210px,
-      1.9fr
-    ) 55px 115px 70px minmax(180px, 1.4fr);
+  grid-template-columns:
+    34px 38px 58px 42px minmax(210px, 1.9fr)
+    55px 115px 70px minmax(180px, 1.4fr);
   align-items: center;
   column-gap: 8px;
 }
